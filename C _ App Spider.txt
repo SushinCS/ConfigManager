@@ -1,0 +1,33 @@
+Create a Scan Configuration in App Spider Tool and Save it.
+
+The Scan configuration is available under C:\Users\USER_PROFILE\Documents\AppSpider\Scans\SCANNAME\SCANCONFIGURATION.scfg
+
+Start the Scan using AppSpider CMD utility which is available under "C:\Program Files (x86)\Rapid7\AppSpider7\ScanEngine\AppSpiderCMD.exe"
+
+Invoke the command :
+
+AppSpiderCMD.exe --config "C:\Users\USER_PROFILE\Documents\AppSpider\Scans\SCANNAME\SCANCONFIGURATION.scfg"
+
+eg)
+
+AppSpiderCMD.exe --config "C:\Users\Documents\AppSpider\Scans\webscantest\webscantest.scfg"
+
+Create a bat file with the above command
+
+Save the bat file in the folder "C:\Program Files (x86)\Rapid7\AppSpider7\ScanEngine\"
+
+------------------------------------------************************-----------------------------------------------------
+For Creating a new Task in Task Scheduler:
+Open Task Scheduler
+Select Create Basic Task from the Action pane on the right of the window.
+Under Create Basic Task, type in the name you like and click Next.
+From the Trigger select the option you like and click Next.
+Then click on Start a Program and click Next.
+
+Then enter Program/script: path to your batch script e.g. C:\Program Files(x86)\Rapid7\AppSpider7\ScanEngine\DAST_START.bat
+Start in (optional): Put the full path to your batch script location e.g. C:\Program Files (x86)\Rapid7\AppSpider7\ScanEngine\(Do not put quotes around Start In)
+
+
+
+
+
